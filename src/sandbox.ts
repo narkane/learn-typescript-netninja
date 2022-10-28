@@ -1,9 +1,20 @@
+type user = {
+  name: string;
+  data: {
+    position: number;
+  };
+};
+
 const inputs = document.querySelectorAll("input");
 
 console.log(inputs);
 
-inputs.forEach((input) => {
-  console.log(input);
-});
+function func(): Number | String {
+  return 0;
+}
 
-// console.log("test");
+const test = func() as Number;
+
+inputs.forEach((input) => {
+  console.log(input as Node);
+});
